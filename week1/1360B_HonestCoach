@@ -1,0 +1,40 @@
+
+Codeforces
+In English По-русски
+rajee2905 | Logout
+ You have +246! Wow!
+
+HomeTopCatalogContestsGymProblemsetGroupsRatingEduAPICalendarHelp
+
+
+ProblemsSubmit CodeMy SubmissionsStatusHacksStandingsCustom Invocation
+    
+General
+  
+397161226	Practice:
+rajee2905	1360B - 29	C++17 (GCC 7-32)	Accepted	62 ms	0 KB	2026-11-02 22:19:43	2026-11-02 22:19:43	Add to favourites	Compare
+→ SourceCopy
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+int t;
+cin>>t;
+while(t--){
+  int n;
+  cin>>n;
+  vector<int>a(n);
+  for(int i=0;i<n;i++){
+       cin>>a[i];
+      }
+ 
+  sort(a.begin(),a.end());
+  int ans=INT_MAX;
+ 
+ for(int i=0;i<n-1;i++){
+  ans=min(ans,a[i+1]-a[i]);
+      
+    
+ }
+cout<<ans<<endl;}
+return 0;
+}
